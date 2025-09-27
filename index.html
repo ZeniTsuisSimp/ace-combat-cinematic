@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace Combat Cinematic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HUD Navbar -->
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <div class="nav-indicator"></div>
+                <span class="nav-title">AERO-COMBAT</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#missions" class="nav-link">01 Missions</a></li>
+                <li><a href="#aircraft" class="nav-link">02 Aircraft</a></li>
+                <li><a href="#settings" class="nav-link">03 Settings</a></li>
+                <li><a href="#overview" class="nav-link">04 Overview</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Cinematic Section -->
+        <section class="hero-section">
+            <!-- Background and overlays -->
+            <div class="hero-background">
+                <img src="public/images/jet-silhouette.jpg" alt="Fighter jet silhouette" class="hero-image">
+                <div class="motion-blur-sweep"></div>
+                <div class="scanlines"></div>
+                <div class="grid-overlay"></div>
+            </div>
+
+            <!-- HUD corners -->
+            <div class="hud-corner hud-corner-top-left"></div>
+            <div class="hud-corner hud-corner-top-right"></div>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-subtitle">Project Stratos // Simulation Protocol</p>
+                    <h1 class="hero-title">Air Superiority, Redefined.</h1>
+                    <p class="hero-description">
+                        Enter an atmospheric battlespace inspired by cutting‑edge aerospace systems. 
+                        Experience a cockpit‑grade HUD, tactical clarity, and cinematic immersion.
+                    </p>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary">
+                        <span>Engage Mission</span>
+                        <span class="btn-arrow"></span>
+                    </a>
+                    <a href="#overview" class="btn btn-secondary">Mission Briefing</a>
+                </div>
+
+                <!-- Telemetry readout -->
+                <div class="telemetry-panel">
+                    <div class="telemetry-item">
+                        <span class="telemetry-label">Altitude</span>
+                        <span class="telemetry-value">35,000 ft</span>
+                    </div>
+                    <div class="telemetry-item">
+                        <span class="telemetry-label">Airspeed</span>
+                        <span class="telemetry-value">Mach 1.8</span>
+                    </div>
+                    <div class="telemetry-item">
+                        <span class="telemetry-label">Heading</span>
+                        <span class="telemetry-value">045° NE</span>
+                    </div>
+                    <div class="telemetry-item">
+                        <span class="telemetry-label">Systems</span>
+                        <span class="telemetry-value">Nominal</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Missions Section -->
+        <section id="missions" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Missions</h2>
+                <p class="section-description">
+                    Select from high‑intensity operations with dynamic weather and multi‑vector objectives.
+                </p>
+                <div class="cards-grid">
+                    <div class="card fade-up" data-delay="0">
+                        <div class="card-header">
+                            <h3 class="card-title">Operation Dawn</h3>
+                        </div>
+                        <div class="card-content">
+                            Low‑visibility intercept across a coastal front with scattered storm cells.
+                        </div>
+                    </div>
+                    <div class="card fade-up" data-delay="80">
+                        <div class="card-header">
+                            <h3 class="card-title">Ghost Line</h3>
+                        </div>
+                        <div class="card-content">
+                            Silent strike on enemy radar nets across mountainous terrain.
+                        </div>
+                    </div>
+                    <div class="card fade-up" data-delay="160">
+                        <div class="card-header">
+                            <h3 class="card-title">Sky Fortress</h3>
+                        </div>
+                        <div class="card-content">
+                            High‑altitude defense with mixed fighter and drone threats.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aircraft Section -->
+        <section id="aircraft" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Aircraft</h2>
+                <p class="section-description">
+                    Fly top‑tier airframes tuned for agility, stealth, and precision engagement.
+                </p>
+                <div class="cards-grid">
+                    <div class="card fade-up" data-delay="0">
+                        <div class="card-header">
+                            <h3 class="card-title">F‑22 Raptor</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="spec-item">
+                                <span class="spec-label">Role</span>
+                                <span class="spec-value">Air Superiority</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Top Speed</span>
+                                <span class="spec-value">Mach 2.25</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card fade-up" data-delay="80">
+                        <div class="card-header">
+                            <h3 class="card-title">Su‑57 Felon</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="spec-item">
+                                <span class="spec-label">Role</span>
+                                <span class="spec-value">Multirole Stealth</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Top Speed</span>
+                                <span class="spec-value">Mach 2.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card fade-up" data-delay="160">
+                        <div class="card-header">
+                            <h3 class="card-title">Eurofighter Typhoon</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="spec-item">
+                                <span class="spec-label">Role</span>
+                                <span class="spec-value">Multirole</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Top Speed</span>
+                                <span class="spec-value">Mach 2.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Settings</h2>
+                <p class="section-description">
+                    Configure HUD clarity, units, and motion parameters for optimal situational awareness.
+                </p>
+                <div class="settings-grid">
+                    <div class="card fade-up" data-delay="0">
+                        <div class="card-header">
+                            <h3 class="card-title">HUD Brightness</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="slider-container">
+                                <input type="range" class="slider" min="0" max="100" value="70" id="hudBrightness">
+                            </div>
+                            <p class="setting-note">Adjust luminance for night ops.</p>
+                        </div>
+                    </div>
+                    <div class="card fade-up" data-delay="80">
+                        <div class="card-header">
+                            <h3 class="card-title">Metric Units</h3>
+                        </div>
+                        <div class="card-content setting-toggle">
+                            <span>Toggle between imperial and metric readouts.</span>
+                            <label class="switch">
+                                <input type="checkbox" id="metricUnits">
+                                <span class="switch-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="card fade-up" data-delay="160">
+                        <div class="card-header">
+                            <h3 class="card-title">Motion Blur</h3>
+                        </div>
+                        <div class="card-content setting-toggle">
+                            <span>Subtle blur during high‑speed flybys.</span>
+                            <label class="switch">
+                                <input type="checkbox" id="motionBlur">
+                                <span class="switch-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="card fade-up" data-delay="240">
+                        <div class="card-header">
+                            <h3 class="card-title">Audio Dynamic Range</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="slider-container">
+                                <input type="range" class="slider" min="0" max="100" value="50" id="audioRange">
+                            </div>
+                            <p class="setting-note">Balance comms, cockpit, and engine audio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section id="overview" class="content-section">
+            <div class="container">
+                <div class="fade-up" data-delay="80">
+                    <h2 class="section-title">Overview</h2>
+                    <p class="section-description">
+                        A cinematic, minimal interface inspired by modern aerospace systems. Transparent glass panels, 
+                        neon accents, and HUD‑grade typography deliver immersion without sacrificing clarity.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
